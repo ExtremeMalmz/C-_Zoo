@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Assignment1\\Assignment1.csproj",
+      "projectUniqueName": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Ass1git\\C-_Zoo\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Assignment1\\Assignment1.csproj",
+      "projectPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Ass1git\\C-_Zoo\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\ericm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Assignment1\\obj\\",
+      "outputPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\C# 2.0 vår 2023\\ass1\\Ass1git\\C-_Zoo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
