@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.animalSpecsBox = new System.Windows.Forms.TextBox();
+            this.animalSpecsLabel = new System.Windows.Forms.Label();
+            this.addAnimalButton = new System.Windows.Forms.Button();
             this.animallistbox = new System.Windows.Forms.ListBox();
             this.specieslistbox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,7 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,9 +59,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FloralWhite;
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.ageBox);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.addAnimalButton);
             this.groupBox1.Controls.Add(this.animallistbox);
             this.groupBox1.Controls.Add(this.specieslistbox);
             this.groupBox1.Controls.Add(this.label5);
@@ -72,7 +70,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.nameBox);
             this.groupBox1.ForeColor = System.Drawing.Color.Coral;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -81,19 +79,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Animal Specifications";
             // 
-            // textBox2
+            // ageBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(244, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 39);
-            this.textBox2.TabIndex = 11;
+            this.ageBox.Location = new System.Drawing.Point(244, 120);
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(200, 39);
+            this.ageBox.TabIndex = 11;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.animalSpecsBox);
+            this.groupBox3.Controls.Add(this.animalSpecsLabel);
             this.groupBox3.Location = new System.Drawing.Point(515, 59);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(436, 293);
@@ -101,48 +97,32 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Specifications";
             // 
-            // textBox4
+            // animalSpecsBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(209, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 39);
-            this.textBox4.TabIndex = 13;
+            this.animalSpecsBox.Location = new System.Drawing.Point(201, 54);
+            this.animalSpecsBox.Name = "animalSpecsBox";
+            this.animalSpecsBox.Size = new System.Drawing.Size(200, 39);
+            this.animalSpecsBox.TabIndex = 12;
             // 
-            // textBox3
+            // animalSpecsLabel
             // 
-            this.textBox3.Location = new System.Drawing.Point(209, 58);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 39);
-            this.textBox3.TabIndex = 12;
+            this.animalSpecsLabel.AutoSize = true;
+            this.animalSpecsLabel.ForeColor = System.Drawing.Color.Black;
+            this.animalSpecsLabel.Location = new System.Drawing.Point(21, 57);
+            this.animalSpecsLabel.Name = "animalSpecsLabel";
+            this.animalSpecsLabel.Size = new System.Drawing.Size(162, 32);
+            this.animalSpecsLabel.TabIndex = 12;
+            this.animalSpecsLabel.Text = "Num of Teeth";
             // 
-            // label6
+            // addAnimalButton
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(29, 141);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 32);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Name";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(29, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 32);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Num of Teeth";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(63, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1496, 73);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ADD ANIMAL";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addAnimalButton.Location = new System.Drawing.Point(63, 396);
+            this.addAnimalButton.Name = "addAnimalButton";
+            this.addAnimalButton.Size = new System.Drawing.Size(1496, 73);
+            this.addAnimalButton.TabIndex = 9;
+            this.addAnimalButton.Text = "ADD ANIMAL";
+            this.addAnimalButton.UseVisualStyleBackColor = true;
+            this.addAnimalButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // animallistbox
             // 
@@ -222,12 +202,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
-            // textBox1
+            // nameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(244, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 39);
-            this.textBox1.TabIndex = 0;
+            this.nameBox.Location = new System.Drawing.Point(244, 59);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(200, 39);
+            this.nameBox.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -238,7 +218,7 @@
             this.groupBox2.Size = new System.Drawing.Size(1836, 336);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Animal Registration";
             // 
             // groupBox4
             // 
@@ -304,15 +284,15 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "ID: ";
             // 
-            // Form1
+            // Zoo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1860, 850);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Zoo";
+            this.Text = "Eric Malmstrom Animal Zoo";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -328,13 +308,11 @@
 
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private TextBox textBox2;
+        private TextBox ageBox;
         private GroupBox groupBox3;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private Label label6;
-        private Label label7;
-        private Button button1;
+        private TextBox animalSpecsBox;
+        private Label animalSpecsLabel;
+        private Button addAnimalButton;
         private ListBox animallistbox;
         private ListBox specieslistbox;
         private Label label5;
@@ -343,7 +321,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox nameBox;
         private GroupBox groupBox4;
         private Label label12;
         private Label label10;

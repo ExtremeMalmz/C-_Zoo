@@ -1,3 +1,5 @@
+using Animal_Space;
+
 namespace Assignment1
 {
     /// <summary>
@@ -5,6 +7,7 @@ namespace Assignment1
     /// </summary>
     public partial class Zoo : Form
     {
+        private Animal animal = null;
         public Zoo()
         {
             InitializeComponent();
@@ -32,12 +35,29 @@ namespace Assignment1
             {
                 string[] mammalsAnimalArray = { "Asiatic lion", "Gorilla" };
                 animallistbox.DataSource = mammalsAnimalArray;
+
+                animalSpecsLabel.Text = "Num of teeth";
             }
             else if(specieslistbox.SelectedIndex == 1)
             {
                 string[] reptilesAnimalArray = { "Gharial", "Gila Monster" };
                 animallistbox.DataSource = reptilesAnimalArray;
+
+                animalSpecsLabel.Text = "Length of tail";
             }
+        }
+
+        /// <summary>
+        /// Adds the animal to the list. Does dynamic binding of an animal object depending on the animal selected
+        /// </summary>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(genderlistbox.SelectedItem);
+            Console.WriteLine(specieslistbox.SelectedItem);
+            Console.WriteLine(animallistbox.SelectedItem);
+
+            //dynamic animalObject
+            object animalObject = new Animal();
         }
     }
 }
